@@ -12,15 +12,103 @@ body.dark-mode {
   color: #ffffff;
 }
 
-/* You can also adjust individual components like the navbar in dark mode */
-body.dark-mode nav {
-  background: #333;
+/* Fixed Transparent Navigation Bar */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  padding: 10px 0;
+  transition: background 0.3s ease;
 }
 
-body.dark-mode nav ul li a {
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: blue;
+}
+
+/* Sections with shadow effect */
+section {
+  background: #f9f9f9;
+  margin: 100px auto 20px auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Mode Sections */
+body.dark-mode section {
+  background: #1e1e1e;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Buttons */
+#mode-toggle {
+  background: #444;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#mode-toggle:hover {
+  background: #666;
+}
+
+/* Overlay for dimming effect on scroll */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  pointer-events: none;
+  transition: background 0.5s ease;
+}
+
+body.scrolled #overlay {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  background: #333;
   color: white;
 }
 
-body.dark-mode nav ul li a:hover {
-  color: yellow;
+/* Skills Section */
+#skills ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#skills li {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+#skills strong {
+  font-weight: bold;
 }
