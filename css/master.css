@@ -3,13 +3,21 @@ body {
   background: white;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
-  text-align: left;
+  text-align: center;
 }
 
-/* Dark Mode */
-body.dark-mode {
-  background: #635b5b;
-  color: #ffffff;
+/* Dark Mode (for the navbar only) */
+#navbar.dark-mode {
+  background: #333;
+  color: white;
+}
+
+#navbar.dark-mode ul li a {
+  color: white; /* Make the links light in dark mode */
+}
+
+#navbar.dark-mode ul li a:hover {
+  color: yellow; /* Hover color for links in dark mode */
 }
 
 /* Fixed Transparent Navigation Bar */
@@ -42,70 +50,3 @@ nav ul li a {
 nav ul li a:hover {
   color: blue;
 }
-
-/* Sections with shadow effect */
-section {
-  background: #f9f9f9;
-  margin: 100px auto 20px auto;
-  padding: 20px;
-  width: 80%;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Dark Mode Sections */
-body.dark-mode section {
-  background: #1e1e1e;
-  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
-}
-
-/* Buttons */
-#mode-toggle {
-  background: #444;
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-#mode-toggle:hover {
-  background: #666;
-}
-
-/* Overlay for dimming effect on scroll */
-#overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0);
-  pointer-events: none;
-  transition: background 0.5s ease;
-}
-
-body.scrolled #overlay {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-/* Footer */
-footer {
-  margin-top: 20px;
-  padding: 10px;
-  background: #333;
-  color: white;
-}
-
-/* Skills Section */
-#skills ul {
-  list-style-type: circle;
-  padding: 1em;
-}
-
-#skills li {
-  font-size: 1.2em;
-  margin-bottom: 10px;
-  text-align: left;
-}
-
