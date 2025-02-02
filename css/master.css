@@ -1,6 +1,6 @@
 /* Default Light Theme */
 body {
-  background: url('media/background-light.jpg') no-repeat center center fixed;
+  background: url('../media/background-light.jpg') no-repeat center center fixed;
   background-size: cover;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
