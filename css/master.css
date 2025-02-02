@@ -18,10 +18,11 @@ nav {
   width: 100%;
   top: 0;
   left: 0;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(229, 226, 226, 0.95);
   backdrop-filter: blur(5px);
-  padding: 10px 0;
+  padding: 1em 0;
   transition: background 0.3s ease;
+  font-weight:bold;
 }
 
 nav ul {
@@ -40,7 +41,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: blue;
+  padding: 9px;
+  box-shadow: 10px 10px 20px rgba(74, 71, 71, 0.3);
 }
 
 /* Sections with shadow effect */
@@ -56,12 +58,12 @@ section {
 /* Dark Mode Sections */
 body.dark-mode section {
   background: #1e1e1e;
-  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 8px rgba(246, 240, 240, 0.2);
 }
 
 /* Buttons */
 #mode-toggle {
-  background: #444;
+  background: #363232;
   color: white;
   border: none;
   padding: 8px 16px;
@@ -70,20 +72,10 @@ body.dark-mode section {
 }
 
 #mode-toggle:hover {
-  background: #666;
+  background: #252424;
 }
 
 /* Overlay for dimming effect on scroll */
-#overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0);
-  pointer-events: none;
-  transition: background 0.5s ease;
-}
 
 body.scrolled #overlay {
   background: rgba(0, 0, 0, 0.2);
@@ -99,16 +91,14 @@ footer {
 
 /* Skills Section */
 #skills ul {
-  list-style-type: none;
-  padding: 0;
+  list-style-type: circle;
+  padding: 10px 10px 10px 10px;
 }
 
 #skills li {
   font-size: 1.2em;
   margin-bottom: 10px;
   text-align: left;
-}
+  padding: 10px 10px 10px 40px;
 
-#skills strong {
-  font-weight: bold;
 }
