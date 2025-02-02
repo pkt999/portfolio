@@ -138,3 +138,16 @@ footer {
     margin: 10px 0;
   }
 }
+
+p a {
+  color: inherit;  /* Inherit text color from parent */
+  text-decoration: none;  /* Remove underline */
+  font-weight: normal;
+}
+
+/* Add a hover effect */
+p a:hover {
+  text-decoration: underline;  /* Add underline on hover */
+  opacity: 0.8;  /* Slight dim effect */
+  transition: 0.2s ease-in-out;
+}
