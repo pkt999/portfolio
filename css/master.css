@@ -92,7 +92,7 @@ footer {
 /* Skills Section */
 #skills ul {
   list-style-type: circle;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 10px 1px 10px;
 }
 
 #skills li {
